@@ -26,4 +26,3 @@ const props = defineProps<{ name: string }>()
 const router = useRouter()
 </script>
 
-
