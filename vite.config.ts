@@ -23,7 +23,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
-    })
+    }),
   ],
 
   // https://github.com/vitest-dev/vitest
