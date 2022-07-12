@@ -1,12 +1,3 @@
-<script setup lang="ts">
-const name = $ref('')
-
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
-</script>
 
 <template>
   <div>
@@ -28,12 +19,7 @@ const go = () => {
       placeholder="What's your name?"
       type="text"
       autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
+      class="px-4 py-2 w-250px text-center bg-transparent rounded border-gray-200 dark:border-gray-700 outline-none active:outline-none"
       @keydown.enter="go"
     >
 
@@ -48,3 +34,16 @@ const go = () => {
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+import { ref } from 'vue'
+
+const name = ref('')
+
+const router = useRouter()
+const go = () => {
+  if (name.value)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
+}
+</script>

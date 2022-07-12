@@ -13,3 +13,7 @@
     />
   </nav>
 </template>
+
+<script setup lang="ts">
+import { toggleDark } from '~/composables'
+</script>

@@ -1,1 +1,1 @@
-export * from './dark'
+export { isDark, toggleDark } from './dark'
