@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.25.2
-  '@iconify/json': ^2.1.76
+  '@iconify/json': ^2.1.77
   '@types/node': ^18.0.3
   '@types/ramda': ^0.28.15
   '@typescript-eslint/parser': ^5.30.6
@@ -18,7 +18,7 @@ specifiers:
   eslint: ^8.19.0
   eslint-plugin-vue: ^9.2.0
   jsdom: ^20.0.0
-  pinia: ^2.0.15
+  pinia: ^2.0.16
   postcss: ^8.4.14
   postcss-preset-env: ^7.7.2
   ramda: ^0.28.0
@@ -27,7 +27,7 @@ specifiers:
   tailwindcss: ^3.1.6
   typescript: ^4.7.4
   unplugin-icons: ^0.14.7
-  unplugin-vue-components: ^0.20.1
+  unplugin-vue-components: ^0.21.1
   vite: ^2.9.14
   vite-plugin-html: ^3.2.0
   vite-plugin-pages: ^0.25.0
@@ -42,14 +42,14 @@ specifiers:
 dependencies:
   '@vueuse/core': 8.9.2_vue@3.2.37
   dayjs: 1.11.3
-  pinia: 2.0.15_j6bzmzd4ujpabbp5objtwxyjp4
+  pinia: 2.0.16_j6bzmzd4ujpabbp5objtwxyjp4
   ramda: 0.28.0
   vue: 3.2.37
   vue-router: 4.1.2_vue@3.2.37
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_4x5o4skxv6sl53vpwefgt23khm
-  '@iconify/json': 2.1.76
+  '@iconify/json': 2.1.77
   '@types/node': 18.0.3
   '@types/ramda': 0.28.15
   '@typescript-eslint/parser': 5.30.6_4x5o4skxv6sl53vpwefgt23khm
@@ -70,7 +70,7 @@ devDependencies:
   tailwindcss: 3.1.6
   typescript: 4.7.4
   unplugin-icons: 0.14.7_2aadqd4crnbbxkgslnli6d4uzu
-  unplugin-vue-components: 0.20.1_uzgujrem2ih7rmmenrgqqoiz2y
+  unplugin-vue-components: 0.21.1_uzgujrem2ih7rmmenrgqqoiz2y
   vite: 2.9.14
   vite-plugin-html: 3.2.0_vite@2.9.14
   vite-plugin-pages: 0.25.0_ye7sw5nid2es3e4qmkjro6ozy4
@@ -674,8 +674,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.76:
-    resolution: {integrity: sha512-U70Ty0NUvaYLXVl6d8+BeAf1C6UbDnAtWY9iSXng3JT9965I9D0Tvqpmuo0Mf1YCRz9d09QolR8sLX8KEFkq4Q==}
+  /@iconify/json/2.1.77:
+    resolution: {integrity: sha512-jiKXdacGC3OQjxSKj4XR38+qR/3IlvW+OyS4FLzrDhFB6XExlVXPu2saWJmrbtoMLCg+pdNsI2Cy/eNTzUFlQw==}
     dependencies:
       '@iconify/types': 1.1.0
       pathe: 0.3.2
@@ -3892,8 +3892,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia/2.0.15_j6bzmzd4ujpabbp5objtwxyjp4:
-    resolution: {integrity: sha512-qkIvXdGWMbnc3UG3l8rn9SV4nE2H4I2R/exZcdn/0pDzjaKQmMUsBXlIurfKu62VJsjETkqss46NP/c88NnjYQ==}
+  /pinia/2.0.16_j6bzmzd4ujpabbp5objtwxyjp4:
+    resolution: {integrity: sha512-9/LMVO+/epny1NBfC77vnps4g3JRezxhhoF1xLUk8mZkUIxVnwfEAIRiAX8mYBTD/KCwZqnDMqXc8w3eU0FQGg==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
@@ -4899,8 +4899,8 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-vue-components/0.20.1_uzgujrem2ih7rmmenrgqqoiz2y:
-    resolution: {integrity: sha512-I70rKUvnJXxBvvTvKhjMV6jXh48BdiUNn2jcQiTdZjqBA3Xgkze31tdc4KBX46yryIy0y6pVaZ9gVBNPrF785g==}
+  /unplugin-vue-components/0.21.1_uzgujrem2ih7rmmenrgqqoiz2y:
+    resolution: {integrity: sha512-8MhIT323q1EUu7rz6NfQeiHqDrZKtygy6s9jzcQAuuZUM2T38SHlPT5YJjBOZmM0Bau6YuNTKfBBX4iHzeusaQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8
@@ -4918,7 +4918,7 @@ packages:
       magic-string: 0.26.2
       minimatch: 5.1.0
       resolve: 1.22.1
-      unplugin: 0.7.0_rollup@2.76.0+vite@2.9.14
+      unplugin: 0.7.2_rollup@2.76.0+vite@2.9.14
       vue: 3.2.37
     transitivePeerDependencies:
       - esbuild
@@ -4951,6 +4951,31 @@ packages:
       vite: 2.9.14
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.3
+    dev: true
+
+  /unplugin/0.7.2_rollup@2.76.0+vite@2.9.14:
+    resolution: {integrity: sha512-m7thX4jP8l5sETpLdUASoDOGOcHaOVtgNyrYlToyQUvILUtEzEnngRBrHnAX3IKqooJVmXpoa/CwQ/QqzvGaHQ==}
+    peerDependencies:
+      esbuild: '>=0.13'
+      rollup: ^2.50.0
+      vite: ^2.3.0 || ^3.0.0-0
+      webpack: 4 || 5
+    peerDependenciesMeta:
+      esbuild:
+        optional: true
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      acorn: 8.7.1
+      chokidar: 3.5.3
+      rollup: 2.76.0
+      vite: 2.9.14
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.4.4
     dev: true
 
   /update-browserslist-db/1.0.4_browserslist@4.21.1:
@@ -5205,6 +5230,10 @@ packages:
 
   /webpack-virtual-modules/0.4.3:
     resolution: {integrity: sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==}
+    dev: true
+
+  /webpack-virtual-modules/0.4.4:
+    resolution: {integrity: sha512-h9atBP/bsZohWpHnr+2sic8Iecb60GxftXsWNLLLSqewgIsGzByd2gcIID4nXcG+3tNe4GQG3dLcff3kXupdRA==}
     dev: true
 
   /whatwg-encoding/2.0.0:
