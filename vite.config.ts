@@ -1,8 +1,11 @@
 /// <reference types="vitest" />
+
 import path from 'path'
 import type { ConfigEnv, UserConfig } from 'vite'
 import { loadEnv } from 'vite'
+
 import { createVitePlugins } from './build/vite/plugins'
+import { OUTPUT_DIR } from './build/constant'
 
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv): UserConfig => {
@@ -14,6 +17,15 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       alias: {
         '~/': `${path.resolve(__dirname, 'src')}/`,
       },
+    },
+
+    build: {
+      target: 'es2019',
+      outDir: OUTPUT_DIR,
+      minify: 'esbuild',
+      // Turning off brotliSize display can slightly reduce packaging time
+      brotliSize: false,
+      chunkSizeWarningLimit: 1200,
     },
 
     // The vite plugins used by the project, which are separately extracted and managed
