@@ -3,6 +3,7 @@ const daisyui = require('daisyui')
 
 module.exports = {
   content: ['./src/**/*.{vue,js,ts}'],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['"DM Sans"', ...defaultTheme.fontFamily.sans],
