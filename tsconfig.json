@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "es2016",
+    "target": "es2019",
     "lib": [
       "DOM",
       "ESNext"
@@ -19,7 +19,8 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "vite-plugin-pages/client"
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
     ],
     "paths": {
       "~/*": [
