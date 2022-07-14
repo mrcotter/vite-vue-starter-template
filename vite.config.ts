@@ -23,8 +23,8 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       target: 'es2019',
       outDir: OUTPUT_DIR,
       minify: 'esbuild',
-      // Turning off brotliSize display can slightly reduce packaging time
-      brotliSize: false,
+      // Turning off gzip-compressed size reporting can slightly reduce packaging time
+      reportCompressedSize: false,
       chunkSizeWarningLimit: 1200,
     },
 
