@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wrapper" :data-theme="theme">
+  <div class="layout" :data-theme="theme">
     <Header />
     <main class="px-4 py-10 text-center">
       <RouterView v-slot="{ Component, route }">
