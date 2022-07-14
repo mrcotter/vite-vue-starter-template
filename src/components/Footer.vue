@@ -1,11 +1,11 @@
 <template>
-  <footer class="layout-footer footer items-center p-4 bg-base-200 dark:bg-neutral text-base-content dark:text-neutral-content">
+  <footer class="layout-footer footer grid-flow-col items-center p-4 bg-base-200 dark:bg-neutral text-base-content dark:text-neutral-content">
     <div class="items-center grid-flow-col">
       <p class="px-1">
-        Copyright © {{ thisYear }} - All right reserved
+        Copyright © {{ thisYear }}
       </p>
     </div>
-    <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <div class="grid-flow-col gap-4 justify-self-end">
       <a
         class="px-2"
         rel="noreferrer"
