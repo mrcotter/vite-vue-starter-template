@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="layout-header navbar">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case text-xl">Starter Template</a>
     </div>

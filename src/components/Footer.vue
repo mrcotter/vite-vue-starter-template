@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer items-center p-4 bg-base-200 dark:bg-neutral text-base-content dark:text-neutral-content">
+  <footer class="layout-footer footer items-center p-4 bg-base-200 dark:bg-neutral text-base-content dark:text-neutral-content">
     <div class="items-center grid-flow-col">
       <p class="px-1">
         Copyright © 2022 - All right reserved

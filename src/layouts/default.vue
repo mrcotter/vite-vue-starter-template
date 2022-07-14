@@ -1,7 +1,7 @@
 <template>
-  <div class="layout" :data-theme="theme">
+  <div class="layout flex flex-col h-screen" :data-theme="theme">
     <Header />
-    <main class="px-4 py-10 text-center">
+    <main class="layout-content grow px-4 py-10 text-center">
       <RouterView v-slot="{ Component, route }">
         <transition name="fade" mode="out-in" appear>
           <component :is="Component" :key="route" />
