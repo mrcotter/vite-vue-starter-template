@@ -4,7 +4,7 @@
       <a class="btn btn-ghost normal-case text-xl">Starter Template</a>
     </div>
     <div class="flex-none">
-      <button class="btn-toggle-dark px-4" icon-btn @click="toggleDark()">
+      <button class="btn-toggle-dark px-4 hover:text-primary" icon-btn @click="toggleDark()">
         <i-carbon-moon v-if="isDark" />
         <i-carbon-sun v-else />
       </button>
