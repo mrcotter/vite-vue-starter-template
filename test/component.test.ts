@@ -13,7 +13,7 @@ describe('Counter.vue', () => {
     const wrapper = mount(Counter, { props: { initial: 0 } })
     expect(wrapper.text()).toContain('0')
 
-    expect(wrapper.find('.inc').exists()).toBe(true)
+    expect(wrapper.find('.btn-inc').exists()).toBe(true)
 
     await wrapper.get('button').trigger('click')
 
