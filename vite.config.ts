@@ -1,54 +1,55 @@
 /// <reference types="vitest" />
 
 import path from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Unocss from 'unocss/vite'
+import type { ConfigEnv, UserConfig } from 'vite'
+import { loadEnv } from 'vite'
 
-export default defineConfig({
-  resolve: {
-    alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+import { createVitePlugins } from './build/vite/plugins'
+import { OUTPUT_DIR } from './build/constant'
+
+// https://vitejs.dev/config/
+export default ({ command, mode }: ConfigEnv): UserConfig => {
+  const isBuild = command === 'build'
+  loadEnv(mode, process.cwd())
+
+  return {
+    resolve: {
+      alias: {
+        '~/': `${path.resolve(__dirname, 'src')}/`,
+      },
     },
-  },
-  plugins: [
-    Vue({
-      reactivityTransform: true,
-    }),
 
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages(),
+    build: {
+      target: 'es2019',
+      outDir: OUTPUT_DIR,
+      minify: 'esbuild',
+      // Turning off gzip-compressed size reporting can slightly reduce packaging time
+      reportCompressedSize: false,
+      chunkSizeWarningLimit: 1200,
+    },
 
-    // https://github.com/antfu/unplugin-auto-import
-    AutoImport({
-      imports: [
-        'vue',
-        'vue/macros',
-        'vue-router',
-        '@vueuse/core',
-      ],
-      dts: true,
-      dirs: [
-        './src/composables',
-      ],
-      vueTemplate: true,
-    }),
+    // The vite plugins used by the project, which are separately extracted and managed
+    plugins: createVitePlugins(
+      isBuild,
+    ),
 
-    // https://github.com/antfu/vite-plugin-components
-    Components({
-      dts: true,
-    }),
+    optimizeDeps: {
+      exclude: ['vue-demi'],
+    },
 
-    // https://github.com/antfu/unocss
-    // see unocss.config.ts for config
-    Unocss(),
-  ],
+    server: {
+      host: '0.0.0.0',
+      port: 3000,
+      open: true,
+    },
 
-  // https://github.com/vitest-dev/vitest
-  test: {
-    environment: 'jsdom',
-  },
-})
+    preview: {
+      port: 5001,
+    },
+
+    // https://github.com/vitest-dev/vitest
+    test: {
+      environment: 'jsdom',
+    },
+  }
+}

@@ -1,0 +1,17 @@
+<template>
+  <div class="hero">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">
+          Hello there
+        </h1>
+        <p class="py-6">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <Counter :initial="0" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts"></script>
