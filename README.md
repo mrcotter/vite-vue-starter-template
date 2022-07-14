@@ -3,7 +3,7 @@
 </p>
 
 <h6 align='center'>
-<a href="#">Live Demo</a>
+<a href="https://vite-vue-starter-template.pages.dev/">Live Demo</a>
 </h6>
 
 <br>
