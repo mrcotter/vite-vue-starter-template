@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     Hello: typeof import('./src/components/Hello.vue')['default']
+    ICarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
     ICarbonSun: typeof import('~icons/carbon/sun')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
