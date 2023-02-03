@@ -23,6 +23,11 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       target: 'es2019',
       outDir: OUTPUT_DIR,
       minify: 'esbuild',
+      rollupOptions: {
+        output: {
+          assetFileNames: 'assets/[name].[hash].[ext]',
+        },
+      },
       // Turning off gzip-compressed size reporting can slightly reduce packaging time
       reportCompressedSize: false,
       chunkSizeWarningLimit: 1200,
