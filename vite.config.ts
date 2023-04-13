@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import path from 'path'
+import path from 'node:path'
 import type { ConfigEnv, UserConfig } from 'vite'
 import { loadEnv } from 'vite'
 

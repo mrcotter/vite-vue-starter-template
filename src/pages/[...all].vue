@@ -19,7 +19,7 @@ meta:
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const goBack = () => {
+function goBack() {
   router.push({ name: 'home' })
 }
 </script>

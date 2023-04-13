@@ -7,8 +7,8 @@ import { configComponentsPlugin } from './components'
 import { configWebfontPlugin } from './webfont'
 import { configIconsPlugin } from './icons'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const createVitePlugins = (isBuild: boolean) => {
+// eslint-disable-next-line unused-imports/no-unused-vars
+export function createVitePlugins(isBuild: boolean) {
   const vitePlugins: (PluginOption | PluginOption[])[] = [
     configVuePlugin(),
     configJsxPlugin(),

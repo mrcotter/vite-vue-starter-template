@@ -1,6 +1,6 @@
 import layouts from 'vite-plugin-vue-layouts'
 
-export const configLayoutsPlugin = () => {
+export function configLayoutsPlugin() {
   const layoutsPlugin = layouts({
     layoutsDirs: 'src/layouts',
   })

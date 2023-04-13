@@ -1,6 +1,6 @@
 import Icons from 'unplugin-icons/vite'
 
-export const configIconsPlugin = () => {
+export function configIconsPlugin() {
   const iconsPlugin = Icons({
     scale: 1.4,
     compiler: 'vue3',
