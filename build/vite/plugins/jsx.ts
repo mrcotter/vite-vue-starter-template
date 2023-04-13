@@ -1,5 +1,5 @@
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
-export const configJsxPlugin = () => {
+export function configJsxPlugin() {
   return vueJsx()
 }
